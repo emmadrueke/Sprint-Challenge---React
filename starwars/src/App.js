@@ -26,10 +26,16 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="Page">
-        <h1 className="Header">React Wars</h1>
-          <div className="Characters">{this.state.starwarsChars.map( (element, index) => { return  <Character key={index} character={element} />})}</div>
+      <div className="page">
+        <h1 className="header">React Wars</h1>
+        <div className="characters">
+          {this.state.starwarsChars.map( (element, index) => { return <Character key={index} character={element} />})}
+        </div>
       </div>
+      // <div className="Page">
+      //   <h1 className="Header">React Wars</h1>
+      //     <div className="Characters">{this.state.starwarsChars.map( (element, index) => { return  <Character key={index} character={element} />})}</div>
+      // </div>
     );
   }
 }
